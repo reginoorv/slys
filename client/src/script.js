@@ -22,14 +22,34 @@ function setupMobileMenu() {
   
   if (menuToggle && mobileMenu) {
     menuToggle.addEventListener('click', function() {
-      mobileMenu.classList.toggle('active');
+      // Toggle hidden class untuk menampilkan/menyembunyikan menu
+      mobileMenu.classList.toggle('hidden');
+      
+      // Mengubah icon saat menu di-toggle
+      const menuIcon = this.querySelector('i');
+      if (menuIcon) {
+        if (mobileMenu.classList.contains('hidden')) {
+          menuIcon.classList.remove('fa-times');
+          menuIcon.classList.add('fa-bars');
+        } else {
+          menuIcon.classList.remove('fa-bars');
+          menuIcon.classList.add('fa-times');
+        }
+      }
     });
     
     // Close mobile menu when clicking a link
     const mobileLinks = mobileMenu.querySelectorAll('a');
     mobileLinks.forEach(link => {
       link.addEventListener('click', function() {
-        mobileMenu.classList.remove('active');
+        mobileMenu.classList.add('hidden');
+        
+        // Reset icon saat menu ditutup
+        const menuIcon = menuToggle.querySelector('i');
+        if (menuIcon) {
+          menuIcon.classList.remove('fa-times');
+          menuIcon.classList.add('fa-bars');
+        }
       });
     });
   }

@@ -35,8 +35,8 @@ function App() {
           </div>
         </nav>
         
-        {/* Mobile Navigation */}
-        <div id="mobile-menu" className="mobile-menu md:hidden bg-light shadow-lg absolute w-full">
+        {/* Mobile Navigation - Hidden by default, shown when toggled */}
+        <div id="mobile-menu" className="mobile-menu md:hidden bg-light shadow-lg absolute w-full hidden">
           <ul className="flex flex-col py-4 space-y-2">
             <li><a href="#home" className="block px-6 py-2 text-center hover:bg-primary hover:text-light transition-colors">Home</a></li>
             <li><a href="#about" className="block px-6 py-2 text-center hover:bg-primary hover:text-light transition-colors">About</a></li>
