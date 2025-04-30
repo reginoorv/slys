@@ -319,6 +319,16 @@ section {
   padding-bottom: 0.5rem;
 }
 
+.border-bottom {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+.hover\:border-bottom:hover {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
 .border-left-accent {
   border-left: 3px solid var(--accent);
   padding-left: 1rem;
