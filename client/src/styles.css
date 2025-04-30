@@ -1,0 +1,211 @@
+/* Custom styles for Sly's Barbershop website */
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Color definitions for the theme */
+:root {
+  --primary: #4A56E2;
+  --secondary: #FF6B6B;
+  --accent: #FFD166;
+  --dark: #2C3E50;
+  --light: #FAFAFA;
+  --success: #4CAF50;
+  --error: #F44336;
+}
+
+/* Theme-specific utility classes */
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.text-light {
+  color: var(--light);
+}
+
+/* Background colors */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+/* Opacity variants */
+.bg-primary.bg-opacity-5 {
+  background-color: rgba(74, 86, 226, 0.05);
+}
+
+.bg-primary.bg-opacity-10 {
+  background-color: rgba(74, 86, 226, 0.1);
+}
+
+.bg-secondary.bg-opacity-10 {
+  background-color: rgba(255, 107, 107, 0.1);
+}
+
+.bg-accent.bg-opacity-10 {
+  background-color: rgba(255, 209, 102, 0.1);
+}
+
+/* Font families */
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Star rating styling */
+.star-rating i {
+  color: #FFD166;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  transition: transform 0.3s ease;
+  transform: translateY(-100%);
+}
+
+.mobile-menu.active {
+  transform: translateY(0);
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  0% { transform: translateX(50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Responsive container */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Grid system */
+.grid {
+  display: grid;
+}
+
+.md\:grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lg\:grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
