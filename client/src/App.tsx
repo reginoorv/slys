@@ -325,7 +325,7 @@ function App() {
             <div className="card reveal">
               <div className="h-56 overflow-hidden relative">
                 <img 
-                  src="https://i.pinimg.com/736x/5c/b6/9f/5cb69f9fb2ca9c81ac6a42aaba6a3f3b.jpg" 
+                  src="https://cdn.shopify.com/s/files/1/0052/6018/1607/files/shaping-03-1024x576.png" 
                   alt="Beard Trim & Shaping"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
@@ -348,7 +348,7 @@ function App() {
             <div className="card reveal">
               <div className="h-56 overflow-hidden relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1634302086887-13b5281d449c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" 
+                  src="https://www.styleseat.com/blog/wp-content/uploads/2021/11/smiling-man-getting-a-hot-towel-shave-1.jpg" 
                   alt="Hot Towel Shave"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
@@ -394,7 +394,7 @@ function App() {
             <div className="card reveal">
               <div className="h-56 overflow-hidden relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1599419685929-4873fe2c601e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" 
+                  src="https://129248156.cdn6.editmysite.com/uploads/1/2/9/2/129248156/P4OYXKYAE2ERENZ2GGRVI4J7.jpeg" 
                   alt="Kid's Haircut"
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
