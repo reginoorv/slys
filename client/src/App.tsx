@@ -299,11 +299,11 @@ function App() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="card reveal">
-              <div className="h-56 overflow-hidden relative bg-light">
+              <div className="h-56 overflow-hidden relative">
                 <img 
-                  src="/images/haircut.svg" 
+                  src="https://images.unsplash.com/photo-1599351431608-4c1a451cae49?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" 
                   alt="Classic Haircut"
-                  className="w-full h-full object-contain p-2 transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
                 <div className="absolute top-0 right-0 bg-accent text-dark font-bold py-1 px-3 m-2 rounded">Popular</div>
               </div>
@@ -323,11 +323,11 @@ function App() {
             </div>
             
             <div className="card reveal">
-              <div className="h-56 overflow-hidden relative bg-light">
+              <div className="h-56 overflow-hidden relative">
                 <img 
-                  src="/images/beard.svg" 
+                  src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" 
                   alt="Beard Trim & Shaping"
-                  className="w-full h-full object-contain p-2 transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="card-content">
@@ -346,11 +346,11 @@ function App() {
             </div>
             
             <div className="card reveal">
-              <div className="h-56 overflow-hidden relative bg-light">
+              <div className="h-56 overflow-hidden relative">
                 <img 
-                  src="/images/shave.svg" 
+                  src="https://images.unsplash.com/photo-1634302086887-13b5281d449c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" 
                   alt="Hot Towel Shave"
-                  className="w-full h-full object-contain p-2 transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="card-content">
@@ -369,11 +369,11 @@ function App() {
             </div>
             
             <div className="card reveal">
-              <div className="h-56 overflow-hidden relative bg-light">
+              <div className="h-56 overflow-hidden relative">
                 <img 
-                  src="/images/coloring.svg" 
+                  src="https://images.unsplash.com/photo-1626954079979-ec4f7b05e032?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" 
                   alt="Hair Coloring"
-                  className="w-full h-full object-contain p-2 transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="card-content">
@@ -392,11 +392,11 @@ function App() {
             </div>
             
             <div className="card reveal">
-              <div className="h-56 overflow-hidden relative bg-light">
+              <div className="h-56 overflow-hidden relative">
                 <img 
-                  src="/images/kids.svg" 
+                  src="https://images.unsplash.com/photo-1599419685929-4873fe2c601e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" 
                   alt="Kid's Haircut"
-                  className="w-full h-full object-contain p-2 transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
               </div>
               <div className="card-content">
@@ -415,11 +415,11 @@ function App() {
             </div>
             
             <div className="card reveal">
-              <div className="h-56 overflow-hidden relative bg-light">
+              <div className="h-56 overflow-hidden relative">
                 <img 
-                  src="/images/deluxe.svg" 
+                  src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=350&q=80" 
                   alt="Deluxe Package"
-                  className="w-full h-full object-contain p-2 transition-transform duration-500 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
                 <div className="absolute top-0 right-0 bg-secondary text-light font-bold py-1 px-3 m-2 rounded">Best Value</div>
               </div>
