@@ -10,27 +10,27 @@ function App() {
     <>
       {/* Navbar - Updated with modern design */}
       <header className="fixed top-0 left-0 w-full bg-light shadow-md z-50 transition-all duration-300">
-        <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+        <nav className="container mx-auto px-6 mobile-px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
             <div className="flex items-center">
               <i className="fas fa-cut text-accent mr-2"></i>
-              <span className="text-2xl font-poppins font-bold text-primary">Sly's</span>
+              <span className="text-xl sm:text-2xl font-poppins font-bold text-primary">Sly's</span>
             </div>
           </div>
           
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex space-x-8">
-            <li><a href="#home" className="font-opensans text-dark hover:text-secondary transition-colors border-accent hover:border-bottom pb-1">Home</a></li>
-            <li><a href="#about" className="font-opensans text-dark hover:text-secondary transition-colors border-accent hover:border-bottom pb-1">About</a></li>
-            <li><a href="#reviews" className="font-opensans text-dark hover:text-secondary transition-colors border-accent hover:border-bottom pb-1">Reviews</a></li>
-            <li><a href="#services" className="font-opensans text-dark hover:text-secondary transition-colors border-accent hover:border-bottom pb-1">Services</a></li>
-            <li><a href="#contact" className="font-opensans text-dark hover:text-secondary transition-colors border-accent hover:border-bottom pb-1">Contact</a></li>
+          <ul className="hidden md:flex space-x-4 lg:space-x-8">
+            <li><a href="#home" className="font-opensans text-sm lg:text-base text-dark hover:text-secondary transition-colors border-accent hover:border-bottom pb-1">Home</a></li>
+            <li><a href="#about" className="font-opensans text-sm lg:text-base text-dark hover:text-secondary transition-colors border-accent hover:border-bottom pb-1">About</a></li>
+            <li><a href="#reviews" className="font-opensans text-sm lg:text-base text-dark hover:text-secondary transition-colors border-accent hover:border-bottom pb-1">Reviews</a></li>
+            <li><a href="#services" className="font-opensans text-sm lg:text-base text-dark hover:text-secondary transition-colors border-accent hover:border-bottom pb-1">Services</a></li>
+            <li><a href="#contact" className="font-opensans text-sm lg:text-base text-dark hover:text-secondary transition-colors border-accent hover:border-bottom pb-1">Contact</a></li>
           </ul>
           
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button id="menu-toggle" className="focus:outline-none">
-              <i className="fas fa-bars text-2xl text-primary"></i>
+              <i className="fas fa-bars text-xl sm:text-2xl text-primary"></i>
             </button>
           </div>
         </nav>
@@ -38,11 +38,11 @@ function App() {
         {/* Mobile Navigation */}
         <div id="mobile-menu" className="mobile-menu md:hidden bg-light shadow-lg absolute w-full">
           <ul className="flex flex-col py-4 space-y-2">
-            <li><a href="#home" className="block px-6 py-2 hover:bg-primary hover:text-light transition-colors">Home</a></li>
-            <li><a href="#about" className="block px-6 py-2 hover:bg-primary hover:text-light transition-colors">About</a></li>
-            <li><a href="#reviews" className="block px-6 py-2 hover:bg-primary hover:text-light transition-colors">Reviews</a></li>
-            <li><a href="#services" className="block px-6 py-2 hover:bg-primary hover:text-light transition-colors">Services</a></li>
-            <li><a href="#contact" className="block px-6 py-2 hover:bg-primary hover:text-light transition-colors">Contact</a></li>
+            <li><a href="#home" className="block px-6 py-2 text-center hover:bg-primary hover:text-light transition-colors">Home</a></li>
+            <li><a href="#about" className="block px-6 py-2 text-center hover:bg-primary hover:text-light transition-colors">About</a></li>
+            <li><a href="#reviews" className="block px-6 py-2 text-center hover:bg-primary hover:text-light transition-colors">Reviews</a></li>
+            <li><a href="#services" className="block px-6 py-2 text-center hover:bg-primary hover:text-light transition-colors">Services</a></li>
+            <li><a href="#contact" className="block px-6 py-2 text-center hover:bg-primary hover:text-light transition-colors">Contact</a></li>
           </ul>
         </div>
       </header>
@@ -58,25 +58,25 @@ function App() {
           <div className="absolute inset-0 bg-dark opacity-70"></div>
         </div>
         
-        <div className="container mx-auto px-6 z-10 reveal">
+        <div className="container mx-auto px-6 mobile-px-4 z-10 reveal">
           <div className="max-w-2xl text-light">
             <div className="flex items-center mb-4 animate-fade-in">
-              <div className="h-14 w-14 bg-accent rounded-full flex items-center justify-center mr-4">
-                <i className="fas fa-cut text-dark text-2xl"></i>
+              <div className="h-10 w-10 sm:h-14 sm:w-14 bg-accent rounded-full flex items-center justify-center mr-3 sm:mr-4">
+                <i className="fas fa-cut text-dark text-lg sm:text-2xl"></i>
               </div>
-              <h3 className="text-xl text-accent font-opensans">PREMIUM BARBERSHOP</h3>
+              <h3 className="text-sm sm:text-xl text-accent font-opensans">PREMIUM BARBERSHOP</h3>
             </div>
-            <h1 className="text-4xl md:text-6xl font-poppins font-bold leading-tight mb-4 animate-slide-up">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-poppins font-bold leading-tight mb-4 animate-slide-up">
               Excellence in <span className="text-accent border-bottom">Every</span> Detail
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray font-roboto animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <p className="text-base sm:text-xl md:text-2xl mb-6 sm:mb-8 text-gray font-roboto animate-slide-up" style={{ animationDelay: '0.2s' }}>
               Professional barbering services tailored to your unique style.
             </p>
-            <div className="animate-slide-up" style={{ animationDelay: '0.4s' }}>
-              <a href="#contact" className="btn btn-secondary">
+            <div className="animate-slide-up flex flex-wrap gap-4" style={{ animationDelay: '0.4s' }}>
+              <a href="#contact" className="btn btn-secondary text-sm sm:text-base">
                 Book Appointment
               </a>
-              <a href="#services" className="btn btn-outline ml-4 text-light border-light hover:bg-light hover:text-dark">
+              <a href="#services" className="btn btn-outline text-sm sm:text-base text-light border-light hover:bg-light hover:text-dark">
                 View Services
               </a>
             </div>
@@ -84,9 +84,9 @@ function App() {
         </div>
         
         {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-light animate-bounce">
+        <div className="absolute bottom-6 sm:bottom-10 left-1/2 transform -translate-x-1/2 text-light animate-bounce">
           <a href="#about" className="flex flex-col items-center">
-            <span className="mb-2 text-sm">Scroll Down</span>
+            <span className="mb-1 sm:mb-2 text-xs sm:text-sm">Scroll Down</span>
             <i className="fas fa-chevron-down"></i>
           </a>
         </div>
@@ -283,21 +283,21 @@ function App() {
       </section>
 
       {/* Services Section - Updated with modern design */}
-      <section id="services" className="py-20 bg-light">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center mb-12 reveal">
+      <section id="services" className="py-20 mobile-py-12 bg-light">
+        <div className="container mx-auto px-6 mobile-px-4">
+          <div className="flex flex-col items-center mb-12 mobile-mb-6 reveal">
             <div className="flex items-center mb-4">
-              <div className="h-1 w-10 bg-accent"></div>
-              <p className="mx-4 text-secondary font-semibold">WHAT WE OFFER</p>
-              <div className="h-1 w-10 bg-accent"></div>
+              <div className="h-1 w-6 sm:w-10 bg-accent"></div>
+              <p className="mx-2 sm:mx-4 text-secondary font-semibold text-sm sm:text-base">WHAT WE OFFER</p>
+              <div className="h-1 w-6 sm:w-10 bg-accent"></div>
             </div>
-            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary mb-2">Our Premium Services</h2>
-            <p className="text-center text-dark-gray max-w-2xl mt-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-poppins font-bold text-primary mb-2 text-center">Our Premium Services</h2>
+            <p className="text-center text-dark-gray max-w-xl sm:max-w-2xl mt-4 text-sm sm:text-base">
               We offer a comprehensive range of professional services tailored to meet your specific needs.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="services-grid">
             <div className="card reveal">
               <div className="h-56 overflow-hidden relative">
                 <img 
@@ -442,21 +442,21 @@ function App() {
       </section>
 
       {/* Contact Section - Updated with modern design */}
-      <section id="contact" className="py-20 bg-gray">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center mb-12 reveal">
+      <section id="contact" className="py-20 mobile-py-12 tablet-py-16 bg-gray">
+        <div className="container mx-auto px-6 mobile-px-4">
+          <div className="flex flex-col items-center mb-12 mobile-mb-6 reveal">
             <div className="flex items-center mb-4">
-              <div className="h-1 w-10 bg-accent"></div>
-              <p className="mx-4 text-secondary font-semibold">GET IN TOUCH</p>
-              <div className="h-1 w-10 bg-accent"></div>
+              <div className="h-1 w-6 sm:w-10 bg-accent"></div>
+              <p className="mx-2 sm:mx-4 text-secondary font-semibold text-sm sm:text-base">GET IN TOUCH</p>
+              <div className="h-1 w-6 sm:w-10 bg-accent"></div>
             </div>
-            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary mb-2">Contact Us</h2>
-            <p className="text-center text-dark-gray max-w-2xl mt-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-poppins font-bold text-primary mb-2 text-center">Contact Us</h2>
+            <p className="text-center text-dark-gray max-w-xl sm:max-w-2xl mt-4 text-sm sm:text-base">
               We're conveniently located and ready to serve you. Feel free to stop by or get in touch.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-10 items-start reveal">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 items-start reveal">
             <div>
               <div className="card mb-8">
                 <div className="card-content">
@@ -542,88 +542,91 @@ function App() {
       </section>
 
       {/* Call to Action Banner */}
-      <section className="py-16 bg-primary relative overflow-hidden">
-        <div className="container mx-auto px-6 relative z-10">
+      <section className="py-16 mobile-py-12 bg-primary relative overflow-hidden">
+        <div className="container mx-auto px-6 mobile-px-4 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="mb-6 md:mb-0 md:max-w-xl">
-              <h3 className="text-3xl font-poppins font-bold text-light mb-2">Ready for a Premium Haircut?</h3>
-              <p className="text-gray">Book your appointment today and experience the difference.</p>
+            <div className="mb-6 md:mb-0 md:max-w-xl text-center md:text-left">
+              <h3 className="text-2xl sm:text-3xl font-poppins font-bold text-light mb-2">Ready for a Premium Haircut?</h3>
+              <p className="text-gray text-sm sm:text-base">Book your appointment today and experience the difference.</p>
             </div>
-            <a href="#contact" className="btn btn-accent">
+            <a href="#contact" className="btn btn-accent text-sm sm:text-base">
               Book Now
               <i className="fas fa-arrow-right ml-2"></i>
             </a>
           </div>
         </div>
         
-        <div className="absolute right-0 bottom-0 opacity-10">
+        <div className="absolute right-0 bottom-0 opacity-10 hidden sm:block">
           <i className="fas fa-cut text-light" style={{ fontSize: '180px' }}></i>
+        </div>
+        <div className="absolute right-0 bottom-0 opacity-10 block sm:hidden">
+          <i className="fas fa-cut text-light" style={{ fontSize: '120px' }}></i>
         </div>
       </section>
 
       {/* Footer - Updated with modern design */}
-      <footer className="bg-dark text-light py-10">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <div className="flex items-center mb-4">
+      <footer className="bg-dark text-light py-10 mobile-py-8">
+        <div className="container mx-auto px-6 mobile-px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-6">
+            <div className="text-center sm:text-left">
+              <div className="flex items-center mb-4 justify-center sm:justify-start">
                 <i className="fas fa-cut text-accent mr-2"></i>
-                <h2 className="text-2xl font-poppins font-bold">Sly's <span className="text-secondary">Barbershop</span></h2>
+                <h2 className="text-xl sm:text-2xl font-poppins font-bold">Sly's <span className="text-secondary">Barbershop</span></h2>
               </div>
-              <p className="mb-4 text-gray">Excellence in Every Detail</p>
-              <div className="flex space-x-4 mt-6">
-                <a href="#" className="w-10 h-10 rounded-full bg-primary flex items-center justify-center hover:bg-secondary transition-colors">
+              <p className="mb-4 text-gray text-sm sm:text-base">Excellence in Every Detail</p>
+              <div className="flex space-x-4 mt-6 justify-center sm:justify-start">
+                <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center hover:bg-secondary transition-colors">
                   <i className="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-primary flex items-center justify-center hover:bg-secondary transition-colors">
+                <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center hover:bg-secondary transition-colors">
                   <i className="fab fa-instagram"></i>
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-primary flex items-center justify-center hover:bg-secondary transition-colors">
+                <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center hover:bg-secondary transition-colors">
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-primary flex items-center justify-center hover:bg-secondary transition-colors">
+                <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary flex items-center justify-center hover:bg-secondary transition-colors">
                   <i className="fab fa-yelp"></i>
                 </a>
               </div>
             </div>
             
-            <div>
-              <h3 className="text-xl font-poppins font-semibold mb-4 border-accent">Quick Links</h3>
+            <div className="text-center sm:text-left">
+              <h3 className="text-lg sm:text-xl font-poppins font-semibold mb-4 border-accent inline-block sm:block">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#home" className="hover:text-accent transition-colors flex items-center">
+                <li><a href="#home" className="hover:text-accent transition-colors flex items-center justify-center sm:justify-start">
                   <i className="fas fa-chevron-right text-xs mr-2"></i> Home
                 </a></li>
-                <li><a href="#about" className="hover:text-accent transition-colors flex items-center">
+                <li><a href="#about" className="hover:text-accent transition-colors flex items-center justify-center sm:justify-start">
                   <i className="fas fa-chevron-right text-xs mr-2"></i> About
                 </a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors flex items-center">
+                <li><a href="#services" className="hover:text-accent transition-colors flex items-center justify-center sm:justify-start">
                   <i className="fas fa-chevron-right text-xs mr-2"></i> Services
                 </a></li>
-                <li><a href="#reviews" className="hover:text-accent transition-colors flex items-center">
+                <li><a href="#reviews" className="hover:text-accent transition-colors flex items-center justify-center sm:justify-start">
                   <i className="fas fa-chevron-right text-xs mr-2"></i> Reviews
                 </a></li>
-                <li><a href="#contact" className="hover:text-accent transition-colors flex items-center">
+                <li><a href="#contact" className="hover:text-accent transition-colors flex items-center justify-center sm:justify-start">
                   <i className="fas fa-chevron-right text-xs mr-2"></i> Contact
                 </a></li>
               </ul>
             </div>
             
-            <div>
-              <h3 className="text-xl font-poppins font-semibold mb-4 border-accent">Contact Info</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
+            <div className="text-center sm:text-left">
+              <h3 className="text-lg sm:text-xl font-poppins font-semibold mb-4 border-accent inline-block sm:block">Contact Info</h3>
+              <ul className="space-y-3 text-sm sm:text-base">
+                <li className="flex items-start justify-center sm:justify-start">
                   <i className="fas fa-map-marker-alt text-accent mt-1 mr-3"></i>
                   <span>123 Main Street, Anytown, ST 12345</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center sm:justify-start">
                   <i className="fas fa-phone-alt text-accent mt-1 mr-3"></i>
                   <span>(555) 123-4567</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center sm:justify-start">
                   <i className="fas fa-envelope text-accent mt-1 mr-3"></i>
                   <span>info@slysbarbershop.com</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start justify-center sm:justify-start">
                   <i className="fas fa-clock text-accent mt-1 mr-3"></i>
                   <span>Mon-Fri: 9am-7pm, Sat: 8am-6pm, Sun: 10am-4pm</span>
                 </li>
@@ -631,7 +634,7 @@ function App() {
             </div>
           </div>
           
-          <div className="border-t border-gray-800 mt-10 pt-8 text-center text-gray">
+          <div className="border-t border-gray-800 mt-8 sm:mt-10 pt-6 sm:pt-8 text-center text-gray text-sm sm:text-base">
             <p>&copy; {new Date().getFullYear()} Sly's Barbershop. All rights reserved.</p>
           </div>
         </div>

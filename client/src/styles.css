@@ -394,24 +394,47 @@ section {
   padding-left: 1rem;
 }
 
+/* Mobile First - Default Styles */
+@media (min-width: 360px) {
+  .container {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+}
+
+/* Small tablets */
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 }
 
+/* Medium tablets */
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
+/* Landscape tablets */
+@media (min-width: 960px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Desktops */
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
   }
 }
 
+/* Large desktops */
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
@@ -421,28 +444,97 @@ section {
 /* Grid system */
 .grid {
   display: grid;
+  gap: 1.5rem;
 }
 
-.md\:grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+/* Mobile (Default) */
+.grid {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.lg\:grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-@media (max-width: 768px) {
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+/* Tablet Portrait */
+@media (min-width: 640px) {
+  .grid {
+    gap: 2rem;
   }
   
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Tablet Landscape */
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
   .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Special case for services grid */
+.services-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Responsive spacing */
+@media (max-width: 639px) {
+  .mobile-py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .mobile-py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .mobile-px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .mobile-mt-6 {
+    margin-top: 1.5rem;
+  }
+  
+  .mobile-mb-6 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .tablet-py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .tablet-grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
