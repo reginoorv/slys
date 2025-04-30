@@ -263,6 +263,16 @@ function App() {
             </button>
           </div>
           
+          {/* Dot indicators */}
+          <div id="review-dots" className="review-dots-container mt-4"></div>
+          
+          {/* Carousel controls with autoplay toggle */}
+          <div className="carousel-controls mt-4">
+            <button id="autoplay-toggle" className="autoplay-toggle" aria-label="Pause autoplay">
+              <i className="fas fa-pause"></i>
+            </button>
+          </div>
+          
           <div className="flex justify-center mt-8">
             <a href="https://maps.app.goo.gl/5r46qxNub4gimaC2A" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
               <span>See all reviews on Google</span>
