@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <rect width="500" height="350" fill="#C72C41" opacity="0.08"/>
+  <g transform="translate(250, 110)">
+    <path d="M70,0 C70,38.6 38.6,70 0,70 C-38.6,70 -70,38.6 -70,0 C-70,-38.6 -38.6,-70 0,-70 C38.6,-70 70,-38.6 70,0" fill="#C72C41" opacity="0.1"/>
+    <path d="M50,0 C50,27.6 27.6,50 0,50 C-27.6,50 -50,27.6 -50,0 C-50,-27.6 -27.6,-50 0,-50 C27.6,-50 50,-27.6 50,0" fill="#C72C41" opacity="0.2"/>
+    
+    <!-- Face Outline -->
+    <path d="M0,-40 C30,-40 40,-10 40,20 C40,50 20,60 0,70 C-20,60 -40,50 -40,20 C-40,-10 -30,-40 0,-40" fill="none" stroke="#0B2545" stroke-width="3"/>
+    
+    <!-- Beard -->
+    <path d="M-30,-5 C-30,30 -20,50 0,60 C20,50 30,30 30,-5" fill="none" stroke="#0B2545" stroke-width="4"/>
+    
+    <!-- Beard Details -->
+    <path d="M-25,10 C-20,20 -10,30 0,35 C10,30 20,20 25,10" fill="none" stroke="#0B2545" stroke-width="2"/>
+    <path d="M-20,25 C-10,35 10,35 20,25" fill="none" stroke="#0B2545" stroke-width="2"/>
+    
+    <!-- Trimmer -->
+    <rect x="-25" y="-70" width="50" height="20" rx="5" fill="#0B2545"/>
+    <rect x="-20" y="-50" width="40" height="5" rx="2" fill="#0B2545"/>
+  </g>
+  
+  <text x="250" y="300" font-family="Arial, sans-serif" font-size="24" fill="#0B2545" text-anchor="middle" font-weight="bold">Beard Trim & Shaping</text>
+</svg>

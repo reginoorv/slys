@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <rect width="500" height="350" fill="#B9A55A" opacity="0.08"/>
+  <g transform="translate(250, 110)">
+    <path d="M70,0 C70,38.6 38.6,70 0,70 C-38.6,70 -70,38.6 -70,0 C-70,-38.6 -38.6,-70 0,-70 C38.6,-70 70,-38.6 70,0" fill="#B9A55A" opacity="0.1"/>
+    <path d="M50,0 C50,27.6 27.6,50 0,50 C-27.6,50 -50,27.6 -50,0 C-50,-27.6 -27.6,-50 0,-50 C27.6,-50 50,-27.6 50,0" fill="#B9A55A" opacity="0.2"/>
+    
+    <!-- Towel -->
+    <path d="M-80,-30 C-60,-50 60,-50 80,-30 C80,-20 70,-10 70,0 C70,10 80,20 80,30 C60,50 -60,50 -80,30 C-80,20 -70,10 -70,0 C-70,-10 -80,-20 -80,-30" fill="#F8F8F8" stroke="#B9A55A" stroke-width="2"/>
+    <path d="M-60,-30 C-60,-10 -60,10 -60,30" fill="none" stroke="#B9A55A" stroke-width="1"/>
+    <path d="M-40,-40 C-40,-15 -40,15 -40,40" fill="none" stroke="#B9A55A" stroke-width="1"/>
+    <path d="M-20,-45 C-20,-15 -20,15 -20,45" fill="none" stroke="#B9A55A" stroke-width="1"/>
+    <path d="M0,-50 C0,-15 0,15 0,50" fill="none" stroke="#B9A55A" stroke-width="1"/>
+    <path d="M20,-45 C20,-15 20,15 20,45" fill="none" stroke="#B9A55A" stroke-width="1"/>
+    <path d="M40,-40 C40,-15 40,15 40,40" fill="none" stroke="#B9A55A" stroke-width="1"/>
+    <path d="M60,-30 C60,-10 60,10 60,30" fill="none" stroke="#B9A55A" stroke-width="1"/>
+    
+    <!-- Straight Razor -->
+    <g transform="rotate(45)">
+      <rect x="-10" y="-80" width="20" height="60" rx="2" fill="#0B2545"/>
+      <rect x="-15" y="-30" width="30" height="10" rx="2" fill="#C72C41"/>
+      <path d="M-15,-20 L15,-20 L15,-10 L-15,-10 Z" fill="#B9A55A"/>
+      <path d="M-10,-10 L10,-10 L5,30 L-5,30 Z" fill="#F8F8F8" stroke="#0B2545" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <text x="250" y="300" font-family="Arial, sans-serif" font-size="24" fill="#0B2545" text-anchor="middle" font-weight="bold">Hot Towel Shave</text>
+</svg>
